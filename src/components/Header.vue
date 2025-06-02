@@ -8,7 +8,7 @@ const activeNav = ref(false);
 <template>
   <header class="container m-auto">
     <div class="flex justify-between items-center gap-3 pt-4 pb-4 max-sm:justify-center">
-      <img class="max-sm:w-[180px]" :src="logo" alt="EuroMed">
+      <img class="max-sm:w-[180px] w-max h-max" :src="logo" alt="EuroMed">
       <div class="flex lg:flex-row flex-col lg:gap-4 gap-3 max-sm:hidden">
         <a class="font-medium flex items-center gap-2" href="tel:+77020772266">
           <span class="material-symbols-outlined">call</span>

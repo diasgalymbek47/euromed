@@ -11,7 +11,7 @@ import telegram from "@/assets/images/telegram.png";
     <div class="container pt-8 pb-8 mx-auto flex justify-between max-md:flex-col max-md:ps-2 max-md:pe-2">
       <div>
           <div class="container mx-auto flex justify-between gap-8 pt-4 pb-4 flex-col">
-            <img class="w-max h-max" :src="logo">
+            <img class="max-sm:w-[180px] w-max h-max" :src="logo">
             <div class="flex flex-col gap-2">
               <div class="text-xl">
                 <a href="https://go.2gis.com/H1OP0" class="flex items-center gap-4">

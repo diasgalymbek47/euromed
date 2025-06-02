@@ -12,6 +12,9 @@ import Modal from "@/components/Modal.vue";
   <Promo text="Рассрочка на 24 месяц без" icon="percent"/>
   <Promo text="Акция на консультацию всего за 4990 тг вместо " lineThrough="15000 тг"/>
   <Promo text="Скидка на лечение варикоза"/>
+  <div class="container mx-auto flex justify-center py-4">
+    <router-link class="btn" to="">Посмотреть все акции</router-link>
+  </div>
 
   <Welcome />
 

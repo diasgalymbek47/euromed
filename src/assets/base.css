@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+button {
+    cursor: pointer;
+}
+
+.mobile_nav {
+    @apply flex max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:h-full max-lg:flex-col max-lg:bg-[#32b0d6] z-10 scroll-auto;
+}
+
+.btn {
+    @apply p-4 bg-[#e73f7b] font-medium text-white hover:bg-[#b90e6a] transition-all max-sm:text-[12px];
+}
+
+.header_link {
+    @apply p-4 font-medium text-white hover:bg-[#e73f7b] flex items-center gap-1;
+}
+
+.footer_link {
+    @apply font-medium text-[17px] text-white underline underline-offset-3 hover:underline-offset-1 max-md:text-[14px];
+}
+
+.hover_card {
+    @apply hover:translate-y-[-6px] transition-all;
+}
+
+.navigation_link {
+    @apply grow p-3 flex items-center justify-center border-[1px] border-gray-200;
+}
+
+.form-title {
+    @apply text-2xl my-4;
+}
+
+.input {
+    @apply border-[1px] border-gray-300 p-2;
+}
+
+.textarea {
+    @apply border-[1px] border-gray-300 p-2;
+}
+
+body {
+    font-family: "WDXL Lubrifont TC", sans-serif;
+}

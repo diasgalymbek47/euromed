@@ -8,27 +8,27 @@ const activeNav = ref(false);
 <template>
   <header class="container m-auto">
     <div class="flex justify-between items-center gap-3 pt-4 pb-4 max-sm:justify-center">
-      <img :src="logo" alt="EuroMed">
+      <img class="max-sm:w-[180px]" :src="logo" alt="EuroMed">
       <div class="flex lg:flex-row flex-col lg:gap-4 gap-3 max-sm:hidden">
-        <a class="font-medium flex gap-1" href="tel:+77070154181">
+        <a class="font-medium flex items-center gap-2" href="tel:+77020772266">
           <span class="material-symbols-outlined">call</span>
-          8-707-015-41-81
+          <span>+7‒702‒077‒22‒66</span>
         </a>
-        <a class="font-medium flex gap-1" target="_blank" href="https://go.2gis.com/SIezU">
+        <a class="font-medium flex items-center gap-2" href="+77025052474">
+          <span class="material-symbols-outlined">call</span>
+          <span>+7‒702‒505‒24‒74</span>
+        </a>
+        <a class="font-medium flex gap-2" target="_blank" href="https://go.2gis.com/H1OP0">
           <span class="material-symbols-outlined">pin_drop</span>
-          г. Алматы, ул.Саина, д.26/5
-        </a>
-        <a class="font-medium flex gap-1" href="mailto:diasgalymbek47@gmail.com">
-          <span class="material-symbols-outlined">mail</span>
-          diasgalymbek47@gmail.com
+          г.Алматы, Улица Санаторная, 2/2
         </a>
       </div>
     </div>
     <div class="flex justify-between items-center gap-3 bg-[#32b0d6]">
       <button @click="activeNav = true" class="lg:hidden flex flex-col gap-1.5 p-4">
-        <span class="sm:w-10 sm:h-1 w-7 h-0.5 bg-[#e73f7b]"></span>
-        <span class="sm:w-10 sm:h-1 w-7 h-0.5 bg-[#e73f7b]"></span>
-        <span class="sm:w-10 sm:h-1 w-7 h-0.5 bg-[#e73f7b]"></span>
+        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
+        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
+        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
       </button>
       <nav class="flex max-lg:hidden" :class="activeNav && 'mobile_nav'">
         <div class="lg:hidden w-full flex justify-between">

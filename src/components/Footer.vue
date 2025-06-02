@@ -3,6 +3,7 @@ import logo from '@/assets/images/euro-med-logo.png'
 import instagram from '@/assets/images/instagram.png'
 import whatsapp from '@/assets/images/whatsapp.png'
 import location from '@/assets/images/location.png'
+import telegram from "@/assets/images/telegram.png";
 </script>
 
 <template>
@@ -13,19 +14,22 @@ import location from '@/assets/images/location.png'
             <img class="w-max h-max" :src="logo">
             <div class="flex flex-col gap-2">
               <div class="text-xl">
-                <a href="#" class="flex items-center gap-4">
+                <a href="https://go.2gis.com/H1OP0" class="flex items-center gap-4">
                   <img :src="location" class="w-[38px] h-[38px]">
-                  <span class="footer_link">Сайна 26/5</span>
+                  <span class="footer_link">Улица Санаторная, 2/2</span>
                 </a>
               </div>
               <div class="flex gap-4 text-xl items-center">
                 <h3 class="text-white">Социальные сети:</h3>
                 <div class="flex gap-4">
-                  <a href="#">
+                  <a href="https://www.instagram.com/euro_med24?igsh=MW00ODBseW4yOXozeA==">
                     <img :src="instagram" class="w-[32px] h-[32px]">
                   </a>
-                  <a href="#">
+                  <a href="https://wa.me/87070154181">
                     <img :src="whatsapp" class="w-[32px] h-[32px]">
+                  </a>
+                  <a href="https://t.me/+77020772266">
+                    <img class="w-[32px] h-[32px]" :src="telegram">
                   </a>
                 </div>
               </div>

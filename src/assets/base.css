@@ -9,7 +9,7 @@ button {
 }
 
 .btn {
-    @apply p-4 bg-[#e73f7b] font-medium text-white hover:bg-[#b90e6a] transition-all max-sm:text-[12px];
+    @apply p-4 bg-[#e73f7b] font-medium text-white hover:bg-[#b90e6a] transition-all max-sm:text-[14px];
 }
 
 .header_link {

@@ -5,6 +5,7 @@ import Welcome from "@/components/Welcome.vue";
 import Video from "@/components/Video.vue";
 import Card from "@/components/Card.vue";
 import ContactForm from "@/components/ContactForm.vue";
+import Modal from "@/components/Modal.vue";
 </script>
 
 <template>
@@ -60,4 +61,6 @@ import ContactForm from "@/components/ContactForm.vue";
   <div class="container mx-auto">
     <ContactForm/>
   </div>
+
+  <Modal/>
 </template>

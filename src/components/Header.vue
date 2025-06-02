@@ -14,7 +14,7 @@ const activeNav = ref(false);
           <span class="material-symbols-outlined">call</span>
           <span>+7‒702‒077‒22‒66</span>
         </a>
-        <a class="font-medium flex items-center gap-2" href="+77025052474">
+        <a class="font-medium flex items-center gap-2" href="tel:+77025052474">
           <span class="material-symbols-outlined">call</span>
           <span>+7‒702‒505‒24‒74</span>
         </a>

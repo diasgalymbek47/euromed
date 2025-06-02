@@ -25,7 +25,7 @@ button {
 }
 
 .navigation_link {
-    @apply grow p-3 flex items-center justify-center border-[1px] border-gray-200;
+    @apply grow p-3 flex items-center justify-center border-[1px] border-gray-300;
 }
 
 .form-title {

@@ -8,7 +8,7 @@ import telegram from '@/assets/images/telegram.png'
 
 <template>
   <div class="hidden max-sm:block fixed left-0 right-0 bottom-0">
-    <div class="flex justify-between items-center bg-gray-50 ">
+    <div class="flex justify-between items-center bg-gray-200 ">
       <router-link class="navigation_link" to="/">
         <img class="w-[24px] h-[24px]" :src="home">
       </router-link>

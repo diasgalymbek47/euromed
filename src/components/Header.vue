@@ -26,9 +26,9 @@ const activeNav = ref(false);
     </div>
     <div class="flex justify-between items-center gap-3 bg-[#32b0d6]">
       <button @click="activeNav = true" class="lg:hidden flex flex-col gap-1.5 p-4">
-        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
-        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
-        <span class="sm:w-10 sm:h-1.5 w-7 h-0.5 bg-[#e73f7b]"></span>
+        <span class="sm:w-[35px] w-7 h-[3px] bg-[#e73f7b]"></span>
+        <span class="sm:w-[35px] w-7 h-[3px] bg-[#e73f7b]"></span>
+        <span class="sm:w-[35px] w-7 h-[3px] bg-[#e73f7b]"></span>
       </button>
       <nav class="flex max-lg:hidden" :class="activeNav && 'mobile_nav'">
         <div class="lg:hidden w-full flex justify-between">

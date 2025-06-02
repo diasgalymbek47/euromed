@@ -25,7 +25,7 @@ import telegram from "@/assets/images/telegram.png";
                   <a href="https://www.instagram.com/euro_med24?igsh=MW00ODBseW4yOXozeA==">
                     <img :src="instagram" class="w-[32px] h-[32px]">
                   </a>
-                  <a href="https://wa.me/87070154181">
+                  <a href="https://wa.me/+77025052474">
                     <img :src="whatsapp" class="w-[32px] h-[32px]">
                   </a>
                   <a href="https://t.me/+77020772266">

@@ -17,12 +17,13 @@ const next = () => {
 </script>
 
 <template>
-  <div class="container mx-auto mt-8 relative">
+  <div class="container mx-auto my-8 relative">
     <button :disabled="index == 0" @click="prev"
             class="btn slider_btn_left flex items-center justify-center">
       <span class="material-symbols-outlined">arrow_back</span>
     </button>
     <div class="lg:w-4/5 m-auto">
+      <span class="py-1 px-2 absolute left-1 top-1 bg-[#32b0d6] md:text-xl text-[12px] text-white">{{index + 1}}/{{items.length}}</span>
       <img class="w-full" :src="items[index]">
     </div>
     <button :disabled="index == items.length - 1" @click="next"

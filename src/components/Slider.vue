@@ -24,7 +24,7 @@ const next = () => {
     </button>
     <div class="lg:w-4/5 m-auto">
       <span class="py-1 px-2 absolute left-1 top-1 bg-[#32b0d6] md:text-xl text-[12px] text-white">{{index + 1}}/{{items.length}}</span>
-      <img class="w-full" :src="items[index]">
+      <img class="w-full lg:h-[800px] md:h-[600px] h-400px" :src="items[index]">
     </div>
     <button :disabled="index == items.length - 1" @click="next"
             class="btn slider_btn_right flex items-center justify-center">

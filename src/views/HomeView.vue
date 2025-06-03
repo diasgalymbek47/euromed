@@ -5,7 +5,6 @@ import Welcome from "@/components/Welcome.vue";
 import Video from "@/components/Video.vue";
 import Card from "@/components/Card.vue";
 import ContactForm from "@/components/ContactForm.vue";
-import Modal from "@/components/Modal.vue";
 </script>
 
 <template>
@@ -28,7 +27,7 @@ import Modal from "@/components/Modal.vue";
   </div>
 
   <div class="container mx-auto">
-    <h2 class="text-4xl max-sm:text-2xl text-center p-4 mb-4 bg-[#f5f5f5]">Услуги</h2>
+    <h2 class="head">Услуги</h2>
     <div class="flex max-md:flex-wrap gap-4">
       <router-link to="/">
         <Card class="hover_card" bg-color="#f5f5f5" icon="monitor_heart" title="Лечение варикоза"/>
@@ -44,7 +43,7 @@ import Modal from "@/components/Modal.vue";
   </div>
 
   <div class="container mx-auto mt-8">
-    <h2 class="text-4xl max-sm:text-2xl text-center p-4 mb-4 bg-[#f5f5f5]">Врачи</h2>
+    <h2 class="head">Врачи</h2>
     <div class="flex max-md:flex-wrap gap-4">
       <router-link to="/">
         <Card class="hover_card" bg-color="#f5f5f5" icon="person" title="Ермаханов Наурызали"/>
@@ -56,7 +55,7 @@ import Modal from "@/components/Modal.vue";
         <Card class="hover_card" bg-color="#f5f5f5" icon="person" title="Ермаханов Наурызали"/>
       </router-link>
     </div>
-    <router-link class="mx-auto w-max block btn mt-4 text-xl" to="/services">Посмотреть всех врачей</router-link>
+    <router-link class="mx-auto w-max block btn mt-4 text-xl" to="/doctors">Посмотреть всех врачей</router-link>
   </div>
 
   <Map/>
@@ -64,6 +63,4 @@ import Modal from "@/components/Modal.vue";
   <div class="container mx-auto">
     <ContactForm/>
   </div>
-
-  <Modal/>
 </template>

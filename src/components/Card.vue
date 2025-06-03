@@ -25,5 +25,9 @@ const props = defineProps({
 <style scoped>
 .material-symbols-outlined {
   font-size: 48px;
+
+  @media (max-width: 435px) {
+    font-size: 32px;
+  }
 }
 </style>

@@ -40,6 +40,10 @@ button {
     @apply border-[1px] border-gray-300 p-2;
 }
 
+.head {
+    @apply p-4 text-center bg-gray-100 text-2xl my-4 max-sm:text-lg;
+}
+
 body {
     font-family: "WDXL Lubrifont TC", sans-serif;
 }

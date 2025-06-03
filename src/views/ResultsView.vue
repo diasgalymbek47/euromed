@@ -11,7 +11,7 @@ const images = [image1, image2, image3, image4, image5];
 
 <template>
   <div class="container mx-auto">
-    <h1 class="mt-8 p-4 bg-[#eee] font-medium text-2xl max-lg:text-xl">Результаты операции
+    <h1 class="mt-8 p-4 head">Результаты операции
       <span class="font-bold text-[#32b0d6]">ДО</span>
       и
       <span class="font-bold text-[#e73f7b]">ПОСЛЕ</span>

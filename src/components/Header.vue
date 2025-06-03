@@ -1,8 +1,13 @@
 <script setup>
 import logo from '@/assets/images/euro-med-logo.png'
+import Modal from "@/components/Modal.vue";
+import ContactForm from "@/components/ContactForm.vue";
 import {ref} from "vue";
 
 const activeNav = ref(false);
+const isActiveModal = ref(false);
+const showModal = () => isActiveModal.value = true;
+const closeModal = value => isActiveModal.value = value;
 </script>
 
 <template>
@@ -33,7 +38,7 @@ const activeNav = ref(false);
       <nav class="flex max-lg:hidden" :class="activeNav && 'mobile_nav'">
         <div class="lg:hidden w-full flex justify-between">
           <div class="p-4">
-            <img class="max-sm:w-48" :src="logo" alt="EuroMed">
+            <img class="max-sm:w-[180px] w-max h-max" :src="logo" alt="EuroMed">
           </div>
           <div class="flex items-center justify-center p-4 font-medium bg-[#e73f7b]">
             <span @click="activeNav = false" class="material-symbols-outlined text-white ">close</span>
@@ -60,7 +65,11 @@ const activeNav = ref(false);
           Результаты
         </router-link>
       </nav>
-      <button class="btn">Запись на прием</button>
+      <button @click="showModal" class="btn">Запись на прием</button>
     </div>
   </header>
+
+  <Modal :is-active="isActiveModal" @close="closeModal">
+    <ContactForm/>
+  </Modal>
 </template>

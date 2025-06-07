@@ -13,12 +13,20 @@
 </script>
 
 <template>
-  <div class="container flex justify-between items-center m-auto mt-4 border-2 border-[#e73f7b]  gap-2">
-    <p class="font-medium text-xl max-sm:text-[14px] ms-4 flex items-center gap-1">
+  <div class="promo container flex justify-between items-center m-auto mt-4 gap-2">
+    <p class="font-medium text-white md:text-xl sm:text-lg max-sm:text-[15px] ms-4">
       {{text}}
       <span class="line-through font-bold">{{lineThrough}}</span>
       <span class="material-symbols-outlined">{{icon}}</span>
     </p>
-    <button class="btn max-sm:text-[14px]">Подробнее</button>
+    <button class="px-10! max-sm:px-5! btn flex items-center justify-center max-sm:text-[14px]">
+      <span class="material-symbols-outlined">visibility</span>
+    </button>
   </div>
 </template>
+
+<style scoped>
+.promo {
+  background: linear-gradient(135deg, #e73f7b, #32b0d6);
+}
+</style>

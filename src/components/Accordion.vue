@@ -1,21 +1,42 @@
 <script setup>
-import {ref} from "vue";
+import {ref, watch, nextTick} from 'vue';
 
-const props = defineProps({
+defineProps({
   title: String
 })
 
 const isActive = ref(false);
+const accordionContent = ref(null);
+const contentHeight = ref('0px');
+
+watch(isActive, async (newVal) => {
+  await nextTick();
+
+  if (accordionContent.value) {
+    contentHeight.value = newVal
+        ? accordionContent.value.scrollHeight + 'px'
+        : '0px';
+  }
+});
 </script>
 
 <template>
   <div class="accordion mt-2">
     <div @click="isActive = !isActive" class="accordion-header">
-      <h3 class="accordion-title">{{title}}</h3>
-      <span class="material-symbols-outlined accordion-icon">{{isActive ? 'remove' : 'add'}}</span>
+      <h3 class="accordion-title">{{ title }}</h3>
+      <span class="material-symbols-outlined accordion-icon">
+        {{ isActive ? 'remove' : 'add' }}
+      </span>
     </div>
-    <div class="accordion-content" :class="isActive && 'active'">
-      <slot></slot>
+
+    <div
+        ref="accordionContent"
+        class="accordion-content"
+        :style="{ height: contentHeight }"
+    >
+      <div class="p-3">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -45,10 +66,11 @@ const isActive = ref(false);
 
 .accordion-title {
   margin-left: 5px;
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: 500;
-  
+  user-select: none;
+
   @media (max-width: 768px) {
     font-size: 18px;
   }
@@ -59,13 +81,7 @@ const isActive = ref(false);
 }
 
 .accordion-content {
-  box-sizing: border-box;
+  transition: height 0.3s ease;
   overflow: hidden;
-  height: 0px;
-}
-
-.accordion-content.active {
-  padding: 10px;
-  height: max-content;
 }
 </style>

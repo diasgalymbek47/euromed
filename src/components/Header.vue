@@ -65,7 +65,10 @@ const closeModal = value => isActiveModal.value = value;
           Результаты
         </router-link>
       </nav>
-      <button @click="showModal" class="btn">Запись на прием</button>
+      <button @click="showModal" class="btn flex items-center justify-center gap-3">
+        <span class="material-symbols-outlined">edit_note</span>
+        Запись на прием
+      </button>
     </div>
   </header>
 

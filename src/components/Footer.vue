@@ -8,9 +8,9 @@ import telegram from "@/assets/images/telegram.png";
 
 <template>
   <footer class="bg-[#32b0d6] max-sm:pb-[60px]">
-    <div class="container pt-8 pb-8 mx-auto flex justify-between max-md:flex-col max-md:ps-2 max-md:pe-2">
+    <div class="container pt-8 pb-8 mx-auto flex justify-between max-lg:flex-col max-md:ps-2 max-md:pe-2">
       <div>
-          <div class="container mx-auto flex justify-between gap-8 pt-4 pb-4 flex-col">
+          <div class="container mx-auto flex justify-between gap-8 pt-8 pb-8 flex-col">
             <img class="max-sm:w-[180px] w-max h-max" :src="logo">
             <div class="flex flex-col gap-2">
               <div class="text-xl">
@@ -19,7 +19,7 @@ import telegram from "@/assets/images/telegram.png";
                   <span class="footer_link">Улица Санаторная, 2/2</span>
                 </a>
               </div>
-              <div class="flex gap-4 text-xl items-center">
+              <div class="max-sm:hidden flex gap-4 text-xl items-center">
                 <h3 class="text-white">Социальные сети:</h3>
                 <div class="flex gap-4">
                   <a href="https://www.instagram.com/euro_med24?igsh=MW00ODBseW4yOXozeA==">

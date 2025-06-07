@@ -1,9 +1,14 @@
 <script setup>
-
+const toUp = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
 </script>
 
 <template>
-  <div class="fixed bottom-3 right-3 border-[1px] border-black p-3 flex items-center justify-center bg-[#e73f7b] cursor-pointer hover:bg-[#b90e6a] transition-all max-sm:hidden">
+  <div @click="toUp" class="fixed bottom-3 right-3 border-[1px] border-black p-3 flex items-center justify-center bg-[#e73f7b] cursor-pointer hover:bg-[#b90e6a] transition-all max-sm:hidden">
     <span class="material-symbols-outlined">arrow_upward</span>
   </div>
 </template>

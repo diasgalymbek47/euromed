@@ -4,7 +4,7 @@
 
 <template>
   <div class="py-4 max-sm:p-4">
-    <form class="w-full flex flex-col gap-2">
+    <form @submit.prevent="" class="w-full flex flex-col gap-2">
       <h2 class="form-title">Запиcь на консультацию</h2>
       <div class="flex max-sm:flex-wrap gap-2">
         <label class="grow lg:text-lg">
@@ -28,7 +28,10 @@
           <textarea class="textarea w-full lg:h-[150px] h-[100px]"></textarea>
         </label>
       </div>
-      <button class="btn" type="submit">Записаться</button>
+      <button class="btn flex items-center justify-center gap-3" type="submit">
+        <span class="material-symbols-outlined">edit_note</span>
+        Записаться
+      </button>
     </form>
   </div>
 </template>

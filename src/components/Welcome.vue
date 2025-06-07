@@ -12,7 +12,7 @@ import Card from '@/components/Card.vue'
         <span class="text-4xl max-sm:text-2xl font-bold text-[#32b0d6]">EURO</span>
         <span class="text-4xl max-sm:text-2xl font-bold text-[#e73f7b]">MED</span>
       </h1>
-      <p class="md:text-lg text-[16px] max-w-96">Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
+      <p class="sm:text-xl text-[16px] max-w-96">Lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem
         lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
       <div class="mt-10 flex max-lg:flex-wrap gap-8 max-md:gap-4">
         <Card title="Корпоративные волонтерские услуги" icon="analytics"/>

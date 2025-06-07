@@ -25,19 +25,29 @@ const props = defineProps({
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
 
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s ease;
 }
 
 .modal.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.active .modal-content {
+  top: 0;
 }
 
 .modal-content {
+  position: relative;
+  top: 100%;
   width: 80%;
   height: 90%;
   padding: 20px;
@@ -45,6 +55,7 @@ const props = defineProps({
   position: relative;
   cursor: default;
   overflow-y: auto;
+  transition: .3s ease;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -54,7 +65,7 @@ const props = defineProps({
   @media (max-width: 425px) {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 30px 0 0 0;
   }
 }
 

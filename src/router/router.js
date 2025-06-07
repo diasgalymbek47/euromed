@@ -20,6 +20,10 @@ const routes = [
     {
         path: '/results',
         component: () => import('@/views/ResultsView.vue')
+    },
+    {
+        path: '/service',
+        component: () => import('@/views/ServiceView.vue')
     }
 ];
 

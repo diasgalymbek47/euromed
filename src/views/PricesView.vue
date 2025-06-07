@@ -119,7 +119,7 @@ const prices = [
     <Accordion :title="price.title" v-for="(price, index) in prices" :key="index">
       <div class="accordion-content bg-gray-100 p-2 text-lg" v-for="(children, childrenIndex) in price.prices" :key="childrenIndex">
         <div class="flex max-sm:flex-wrap items-center gap-2">
-          <span class="font-medium max-sm:text-[16px] tracking-[1px]">{{children.text}}:</span>
+          <span class="font-medium max-sm:text-[16px]">{{children.text}}:</span>
           <span class="font-bold text-[19px] text-[#e73f7b]">{{formatterPrice(children.price)}}тг</span>
         </div>
       </div>

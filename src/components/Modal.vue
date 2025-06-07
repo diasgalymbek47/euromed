@@ -9,8 +9,8 @@ const props = defineProps({
 
 <template>
   <div @click.self="$emit('close', false)" class="modal" :class="isActive && 'active'">
-    <div class="modal-content">
-      <span @click.self="$emit('close', false)" class="material-symbols-outlined modal-close">close</span>
+    <div class="modal-content rounded-lg overflow-hidden">
+      <span @click.self="$emit('close', false)" class="material-symbols-outlined modal-close rounded-lg overflow-hidden">close</span>
       <slot></slot>
     </div>
   </div>

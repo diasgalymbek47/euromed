@@ -13,7 +13,7 @@ button {
 }
 
 .header_link {
-    @apply p-4 font-medium text-white hover:bg-[#e73f7b] flex items-center gap-1;
+    @apply py-4 px-6 font-bold text-white hover:bg-[#e73f7b] flex items-center gap-1;
 }
 
 .footer_link {
@@ -29,7 +29,7 @@ button {
 }
 
 .form-title {
-    @apply text-2xl my-4;
+    @apply text-2xl my-4 max-sm:text-xl;
 }
 
 .input {
@@ -41,9 +41,17 @@ button {
 }
 
 .head {
-    @apply font-medium p-4 text-center bg-gray-100 text-2xl my-4 max-sm:text-lg;
+    @apply font-medium p-3 text-center bg-gray-50 text-xl my-4 max-sm:text-lg rounded-lg;
 }
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Manrope", sans-serif;
+}
+
+.text-shadow-white {
+    text-shadow: 0 0 2px white;
+}
+
+.text-shadow-black {
+    text-shadow: 0 0 2px black;
 }

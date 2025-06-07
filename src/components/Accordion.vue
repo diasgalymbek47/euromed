@@ -21,7 +21,7 @@ watch(isActive, async (newVal) => {
 </script>
 
 <template>
-  <div class="accordion mt-2">
+  <div class="accordion mt-2 rounded-lg overflow-hidden">
     <div @click="isActive = !isActive" class="accordion-header">
       <h3 class="accordion-title">{{ title }}</h3>
       <span class="material-symbols-outlined accordion-icon">

@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <div class="promo container flex justify-between items-center m-auto mt-4 gap-2">
+  <div class="promo container flex justify-between items-center m-auto mt-4 gap-2 rounded-lg overflow-hidden">
     <p class="font-medium text-white md:text-xl sm:text-lg max-sm:text-[15px] ms-4">
       {{text}}
       <span class="line-through font-bold">{{lineThrough}}</span>

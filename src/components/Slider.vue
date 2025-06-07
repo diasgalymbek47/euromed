@@ -1,56 +1,33 @@
 <script setup>
-import { ref, watch, nextTick } from 'vue';
+import {ref} from "vue";
 
 const props = defineProps({
   items: Array
-});
+})
 
-const isLoaded = ref(false);
-const showImage = ref(true);
-const index = ref(0);
-
-watch(index, async () => {
-  isLoaded.value = false;
-  showImage.value = false;
-
-  // Даем Vue возможность "вырезать" картинку из DOM (v-if), чтобы reset был визуален
-  await nextTick();
-
-  showImage.value = true;
-});
-
-const handleLoad = () => {
-  isLoaded.value = true;
-};
+let index = ref(0);
 
 const prev = () => {
-  if (index.value > 0) index.value--;
-};
+  index.value--;
+}
 
 const next = () => {
-  if (index.value < props.items.length - 1) index.value++;
-};
+  index.value++;
+}
 </script>
 
 <template>
-  <div class="container mx-auto my-8 relative">
+  <div class="container mx-auto my-8 relative select-none">
     <button :disabled="index == 0" @click="prev"
-            class="btn slider_btn_left flex items-center justify-center">
+            class="btn slider_btn_left flex items-center justify-center rounded-lg overflow-hidden">
       <span class="material-symbols-outlined">arrow_back</span>
     </button>
     <div class="lg:w-4/5 m-auto">
-      <span
-          class="py-1 px-2 absolute left-1 top-1 bg-[#32b0d6] md:text-xl text-[12px] text-white">{{ index + 1 }}/{{ items.length }}</span>
-      <img
-          v-if="showImage"
-          :src="items[index]"
-          @load="handleLoad"
-          :class="{ 'img-loaded': isLoaded }"
-          class="fade-img w-full lg:h-[800px] md:h-[600px] h-400px"
-      />
+      <span class="py-1 px-2 rounded-lg overflow-hidden absolute left-1 top-1 bg-[#32b0d6] md:text-xl text-[12px] text-white">{{index + 1}}/{{items.length}}</span>
+      <img class="w-full lg:h-[800px] md:h-[600px] h-400px rounded-lg overflow-hidden" :src="items[index]">
     </div>
     <button :disabled="index == items.length - 1" @click="next"
-            class="btn slider_btn_right flex items-center justify-center">
+            class="btn slider_btn_right flex items-center justify-center rounded-lg overflow-hidden">
       <span class="material-symbols-outlined">arrow_forward</span>
     </button>
   </div>
@@ -91,15 +68,5 @@ const next = () => {
   @media (max-width: 767px) {
     font-size: 12px;
   }
-}
-
-.fade-img {
-  user-select: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.img-loaded {
-  opacity: 1;
 }
 </style>

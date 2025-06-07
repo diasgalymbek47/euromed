@@ -38,21 +38,21 @@ import telegram from "@/assets/images/telegram.png";
       </div>
       <div class="flex flex-wrap gap-10 items-center">
         <div class="flex flex-col gap-1">
-          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-[#111]">Полезные ссылки</h2>
+          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-white">Полезные ссылки</h2>
           <router-link class="footer_link" to="/">Вопросы и ответы</router-link>
           <router-link class="footer_link" to="/">Консультация</router-link>
           <router-link class="footer_link" to="/">Виды варикоза</router-link>
           <router-link class="footer_link" to="/">Описание болезней</router-link>
         </div>
         <div class="flex flex-col gap-1">
-          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-[#111]">Помощь</h2>
+          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-white">Помощь</h2>
           <router-link class="footer_link" to="/">Вопросы и ответы</router-link>
           <router-link class="footer_link" to="/">Консультация</router-link>
           <router-link class="footer_link" to="/">Виды варикоза</router-link>
           <router-link class="footer_link" to="/">Описание болезней</router-link>
         </div>
         <div class="flex flex-col gap-1">
-          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-[#111]">Услуги</h2>
+          <h2 class="mb-3 font-medium text-2xl max-md:text-xl text-white">Услуги</h2>
           <router-link class="footer_link" to="/">Лечение варикоза</router-link>
           <router-link class="footer_link" to="/">Лечение варикоза</router-link>
           <router-link class="footer_link" to="/">Лечение варикоза</router-link>

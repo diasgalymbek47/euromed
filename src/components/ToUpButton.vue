@@ -8,7 +8,7 @@ const toUp = () => {
 </script>
 
 <template>
-  <div @click="toUp" class="fixed bottom-3 right-3 border-[1px] border-black p-3 flex items-center justify-center bg-[#e73f7b] cursor-pointer hover:bg-[#b90e6a] transition-all max-sm:hidden">
+  <div @click="toUp" class="fixed rounded-lg bottom-3 right-3 border-[1px] border-black p-3 flex items-center justify-center bg-[#e73f7b] cursor-pointer hover:bg-[#b90e6a] transition-all max-sm:hidden">
     <span class="material-symbols-outlined">arrow_upward</span>
   </div>
 </template>

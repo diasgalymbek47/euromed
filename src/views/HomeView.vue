@@ -18,10 +18,12 @@ import ContactForm from "@/components/ContactForm.vue";
   <Welcome />
 
   <div class="container mx-auto my-8">
-    <h2 class="flex items-center gap-2 text-3xl max-sm:text-2xl justify-center p-4 bg-[#f5f5f5] mb-4">
+    <h2 class="flex flex-wrap items-center gap-2 text-3xl max-sm:text-2xl justify-center p-4 bg-[#f5f5f5] mb-4">
       Наша клиника
-      <span class="text-4xl max-sm:text-2xl font-bold text-[#32b0d6]">EURO</span>
-      <span class="text-4xl max-sm:text-2xl font-bold text-[#e73f7b]">MED</span>
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="text-4xl max-sm:text-2xl font-bold text-[#32b0d6]">EURO</span>
+        <span class="text-4xl max-sm:text-2xl font-bold text-[#e73f7b]">MED</span>
+      </div>
     </h2>
     <Video/>
   </div>

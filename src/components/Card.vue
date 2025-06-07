@@ -14,7 +14,7 @@ const props = defineProps({
     <div>
       <span class="material-symbols-outlined">{{icon}}</span>
     </div>
-    <h2 class="text-2xl max-md:text-xl">{{title}}</h2>
+    <h2 class="text-center text-2xl max-md:text-xl">{{title}}</h2>
     <div class="text-xl max-md:text-lg max-sm:text-[16px] p-2 text-center">
       Описание текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
       текст текст текст текст текст текст текст

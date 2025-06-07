@@ -41,7 +41,7 @@ button {
 }
 
 .head {
-    @apply p-4 text-center bg-gray-100 text-2xl my-4 max-sm:text-lg;
+    @apply font-medium p-4 text-center bg-gray-100 text-2xl my-4 max-sm:text-lg;
 }
 
 body {

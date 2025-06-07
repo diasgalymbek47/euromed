@@ -2,12 +2,22 @@
 import logo from '@/assets/images/euro-med-logo.png'
 import Modal from "@/components/Modal.vue";
 import ContactForm from "@/components/ContactForm.vue";
-import {ref} from "vue";
+import {ref, watch} from "vue";
 
 const activeNav = ref(false);
 const isActiveModal = ref(false);
 const showModal = () => isActiveModal.value = true;
 const closeModal = value => isActiveModal.value = value;
+
+watch(isActiveModal, (value) => {
+  if (value) document.body.style.overflow = 'hidden';
+  else document.body.style.overflow = 'auto';
+})
+
+watch(activeNav, (value) => {
+  if (value) document.body.style.overflow = 'hidden';
+  else document.body.style.overflow = 'auto';
+})
 </script>
 
 <template>

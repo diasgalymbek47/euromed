@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+*,
+*::after,
+*::before {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header-inner {
+    @apply container mx-auto flex items-center justify-between py-6 px-2;
+}
+
+.header-nav {
+    @apply flex gap-8;
+}
+
+.header-link {
+    @apply text-[#696e7b] hover:text-[#b90e6a] transition-all;
+
+    @media (min-width: 768px) {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #b90e6a;
+            transition: all .3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+
+.welcome-inner {
+    @apply container mx-auto pt-[110px] xl:pb-[200px] pb-[250px] max-lg:pb-[100px] sm:px-10 px-4;
+}

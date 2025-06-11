@@ -32,7 +32,7 @@ import location from '@/assets/images/location.png'
         </div>
         <div class="grow 2xl:w-[33.3%] lg:w-[50%] md:w-[100%] md:p-[60px] sm:p-[30px] p-[20px] bg-[#1977cc]">
             <h2 class="mb-[20px] text-[22px] font-medium">Контакты</h2>
-            <a class="text-xl font-bold flex items-center gap-2 mb-[20px] hover:underline" href="tel:87025052472">
+            <a class="text-xl font-bold flex items-center gap-2 mb-[20px] hover:underline" href="tel:87025052474">
                 <img width="24" height="24" :src="phoneCall" alt="phone">
                 +7 (702) 505-24-74
             </a>
